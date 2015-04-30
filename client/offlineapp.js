@@ -1,8 +1,10 @@
 Template.numbers.onCreated(function() {
   var self = this;
-  self.autorun(function () {
-    self.subscribe("numbers");
-  });
+  if ( Meteor.status().connected ) {
+    self.autorun(function () {
+      self.subscribe("numbers");
+    });
+  }
 });
 
 Template.offlineNumbers.onCreated(function() {
