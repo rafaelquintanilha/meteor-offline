@@ -1,4 +1,6 @@
+subs = new SubsManager();
+
 Meteor.startup(function () {
-	Meteor.subscribe("numbers");
-	Meteor.subscribe("offlineNumbers");
+	subs.subscribe("numbers");
+	subs.subscribe("offlineNumbers");
 });

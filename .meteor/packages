@@ -8,3 +8,4 @@ meteor-platform
 insecure
 ground:db
 iron:router
+meteorhacks:subs-manager

@@ -2,7 +2,7 @@ Template.numbers.onCreated(function() {
   var self = this;
   if ( Meteor.status().connected ) {
     self.autorun(function () {
-      self.subscribe("numbers");
+      subs.subscribe("numbers");
     });
   }
 });
@@ -11,7 +11,7 @@ Template.offlineNumbers.onCreated(function() {
   var self = this;
   if ( Meteor.status().connected ) {
     self.autorun(function () {
-      self.subscribe("offlineNumbers");
+      subs.subscribe("offlineNumbers");
     });
   }
 });
