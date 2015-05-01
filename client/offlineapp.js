@@ -1,3 +1,5 @@
+// Template-level subscriptions with subsmanager taking care of caching
+
 Template.numbers.onCreated(function() {
   var self = this;
   if ( Meteor.status().connected ) {
